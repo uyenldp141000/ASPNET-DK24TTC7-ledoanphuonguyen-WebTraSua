@@ -14,6 +14,22 @@ namespace TraSuaWeb
             {
                 LayDuLieu();
             }
+            if (Session["User"] != null)
+            {
+                // Đã đăng nhập: Chỉ hiện nút Đăng xuất
+                lblUser.Text = "Xin chào, " + Session["User"].ToString();
+                btnDangNhap.Visible = false;
+                btnDangKy.Visible = false;
+                btnDangXuat.Visible = true;
+            }
+            else
+            {
+                // Chưa đăng nhập: Hiện nút Đăng nhập và Đăng ký
+                lblUser.Text = "Chào khách";
+                btnDangNhap.Visible = true;
+                btnDangKy.Visible = true;
+                btnDangXuat.Visible = false;
+            }
         }
 
         private void LayDuLieu()
@@ -32,13 +48,31 @@ namespace TraSuaWeb
                 DataTable dt = new DataTable();
                 da.Fill(dt);
 
-                // 5. Gán vào Control hiển thị 
+                // 5. Gán vào Control hiển thị (ví dụ DataList hoặc GridView)
                 dlSanPham.DataSource = dt;
                 dlSanPham.DataBind();
             }
         }
 
+        protected void btnDangXuat_Click(object sender, EventArgs e)
+        {
+            Session.Abandon();
+            Session.Clear();
+            Response.Redirect("DangNhap.aspx");
+        }
+        protected void btnDangNhap_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("DangNhap.aspx");
+        }
+
+        protected void btnDangKy_Click(object sender, EventArgs e)
+        {
+            
+            Response.Redirect("DangKy.aspx");
+        }
+
         
+
     }
 
     

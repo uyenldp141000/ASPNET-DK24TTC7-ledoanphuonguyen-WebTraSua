@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TraSuaWeb
+namespace PJTraSua
 {
 
 
-    public partial class Default
+    public partial class Admin
     {
 
         /// <summary>
@@ -33,24 +33,6 @@ namespace TraSuaWeb
         protected global::System.Web.UI.WebControls.Label lblUser;
 
         /// <summary>
-        /// btnDangNhap control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnDangNhap;
-
-        /// <summary>
-        /// btnDangKy control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnDangKy;
-
-        /// <summary>
         /// btnDangXuat control.
         /// </summary>
         /// <remarks>
@@ -60,12 +42,57 @@ namespace TraSuaWeb
         protected global::System.Web.UI.WebControls.Button btnDangXuat;
 
         /// <summary>
-        /// dlSanPham control.
+        /// gvSanPham control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DataList dlSanPham;
+        protected global::System.Web.UI.WebControls.GridView gvSanPham;
+
+        /// <summary>
+        /// txtTenMoi control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtTenMoi;
+
+        /// <summary>
+        /// fileAnhMoi control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FileUpload fileAnhMoi;
+
+        /// <summary>
+        /// txtGiaMoi control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtGiaMoi;
+
+        /// <summary>
+        /// btnThem control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnThem;
+
+        /// <summary>
+        /// SqlDataSource1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
     }
 }

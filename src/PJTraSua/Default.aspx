@@ -48,11 +48,29 @@
         }
     </style>
 </head>
+
 <body>
     <form id="form1" runat="server">
         <div class="header">
+            <div style="text-align: right; background-color: #ffc0cb; padding: 15px;">
+    <asp:Label ID="lblUser" runat="server" Text="Chào khách"></asp:Label>
+    &nbsp;
+    <asp:Button ID="btnDangNhap" runat="server" Text="Đăng nhập" OnClick="btnDangNhap_Click" />
+    <asp:Button ID="btnDangKy" runat="server" Text="Đăng ký" OnClick="btnDangKy_Click" />
+    <asp:Button ID="btnDangXuat" runat="server" Text="Đăng xuất" OnClick="btnDangXuat_Click" />
+</div>
+        </div>
+            
+            
+                    <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; background-color: #ffb6c1;">
+<div style="font-weight: bold; color: #d10047;">Pinky Tea Store</div>
+        </div>
+        <div style="text-align: center; background-color: #ffc0cb; padding: 15px;">
             <h1>🌸 Chào mừng đến với Pinky Tea 🌸</h1>
             <p>Menu trà sữa hôm nay</p>
+            </div>
+            
+            
         </div>
 
         <div style="display: flex; justify-content: center; width: 100%;">
