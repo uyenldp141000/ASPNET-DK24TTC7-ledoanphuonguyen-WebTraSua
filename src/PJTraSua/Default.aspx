@@ -5,7 +5,25 @@
 <head runat="server">
     <title>Pinky Tea - Trà Sữa Ngọt Ngào</title>
     <style>
-        
+        .header-navbar {
+        display: flex; /* Dàn hàng ngang */
+        justify-content: space-between; /* Đẩy 2 phần về 2 đầu */
+        align-items: center; /* Căn giữa theo chiều dọc */
+        background-color: #ffcccc; /* Màu hồng của bạn */
+        padding: 10px 20px;
+    }
+
+    .nav-left a {
+        text-decoration: none;
+        color: #d10047;
+        font-weight: bold;
+    }
+
+    .nav-right {
+        display: flex;
+        gap: 10px; /* Khoảng cách giữa các nút */
+        align-items: center;
+    }
         body {
             background-color: #ffe4e1; 
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -52,14 +70,20 @@
 <body>
     <form id="form1" runat="server">
         <div class="header">
-            <div style="text-align: right; background-color: #ffc0cb; padding: 15px;">
-    <asp:Label ID="lblUser" runat="server" Text="Chào khách"></asp:Label>
-    &nbsp;
-    <asp:Button ID="btnDangNhap" runat="server" Text="Đăng nhập" OnClick="btnDangNhap_Click" />
-    <asp:Button ID="btnDangKy" runat="server" Text="Đăng ký" OnClick="btnDangKy_Click" />
-    <asp:Button ID="btnDangXuat" runat="server" Text="Đăng xuất" OnClick="btnDangXuat_Click" />
+            <div class="header-navbar">
+    <div class="nav-left">
+        <asp:HyperLink ID="lnkLienHe" runat="server" NavigateUrl="~/LienHe.aspx">📞 Liên hệ</asp:HyperLink>
+        <asp:HyperLink ID="lnkPhanAnh" runat="server" NavigateUrl="~/PhanAnh.aspx" style="margin-left: 15px;">📝 Phản ánh</asp:HyperLink>
+    </div>
+                <div class="nav-right">
+        <asp:Label ID="lblUser" runat="server" Text="Chào khách"></asp:Label>
+        <asp:Button ID="btnDangNhap" runat="server" Text="Đăng nhập" OnClick="btnDangNhap_Click" />
+        <asp:Button ID="btnDangKy" runat="server" Text="Đăng ký" OnClick="btnDangKy_Click" />
+        <asp:Button ID="btnDangXuat" runat="server" Text="Đăng xuất" OnClick="btnDangXuat_Click" />
+    </div>
 </div>
-        </div>
+            
+</div>
             
             
                     <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; background-color: #ffb6c1;">

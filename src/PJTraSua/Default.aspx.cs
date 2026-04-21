@@ -9,6 +9,13 @@ namespace TraSuaWeb
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (lnkPhanAnh != null)
+            {
+                lnkPhanAnh.Visible = (Session["User"] != null);
+            }
+            // Ẩn/Hiện link phản ánh dựa trên trạng thái đăng nhập
+            lnkPhanAnh.Visible = (Session["User"] != null);
+
             // Chỉ load dữ liệu trong lần chạy đầu tiên, tránh load lại khi postback
             if (!IsPostBack)
             {

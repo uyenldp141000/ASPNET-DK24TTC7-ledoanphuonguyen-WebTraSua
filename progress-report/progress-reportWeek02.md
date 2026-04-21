@@ -10,7 +10,10 @@
     - Tạo trang `QuanLyUser.aspx` với GridView.
     - Viết truy vấn SQL phức tạp sử dụng `LEFT JOIN` và `GROUP BY` để lấy dữ liệu thống kê đơn hàng từ bảng `DonHang` sang bảng `NguoiDung`.
     - Giao diện Admin được tùy chỉnh CSS sang màu hồng phấn, có nút quay lại trang chủ Admin.
-
+- **Liên hệ và Phản Ánh
+    - Tạo trang liên hệ hiển thị thông tin Hotline và Email. Dữ liệu được quản lý tập trung trong SQL Server, cho phép Admin cập nhật mà không cần can thiệp code
+    - Trang Phản ánh Form thu thập ý kiến người dùng (Họ tên, SĐT, Nội dung).
+    - Cơ chế bảo mật sử dụng Session["User"] để xác thực người dùng. Nếu chưa đăng nhập, hệ thống sẽ từ chối truy cập và chuyển hướng về trang Đăng nhập.
 ## 2. Nhật ký Lỗi và Giải quyết (Troubleshooting)
 
 | STT | Lỗi gặp phải | Nguyên nhân | Cách khắc phục |

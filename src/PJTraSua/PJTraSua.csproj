@@ -78,6 +78,8 @@
     <Content Include="Images\matcha.jpg" />
     <Content Include="Images\trasuaduongden.jpg" />
     <Content Include="Images\tsdautay.jpg" />
+    <Content Include="LienHe.aspx" />
+    <Content Include="PhanAnh.aspx" />
     <Content Include="QuanLyUser.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -109,6 +111,20 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LienHe.aspx.cs">
+      <DependentUpon>LienHe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LienHe.aspx.designer.cs">
+      <DependentUpon>LienHe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PhanAnh.aspx.cs">
+      <DependentUpon>PhanAnh.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PhanAnh.aspx.designer.cs">
+      <DependentUpon>PhanAnh.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuanLyUser.aspx.cs">
